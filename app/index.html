@@ -1,49 +1,136 @@
 <!DOCTYPE html>
-<html lang="ru">
+<div lang="ru">
 
-<head>
+	<head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+		<meta charset="utf-8">
+		<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
-	<meta name="description" content="">
+		<title>OptimizedHTML 4</title>
+		<meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
+		<!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Template Basic Images End -->
 
-	<link rel="stylesheet" href="css/main.min.css">
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#000">
+		<!-- Custom Browsers Color End -->
 
-</head>
+		<link rel="stylesheet" href="css/main.min.css">
 
-<body>
+	</head>
 
-	<!-- Custom HTML -->
+	<body>
 
-	<div class="container">
+		<!-- Custom HTML -->
 
-		<div class="row">
+		<div class="container-fluid">
 
-			111 ура заработало
+			<div class="row">
+				<div class="main">
+					<div class="menu">
+						<div class="logo">
+							<img src="img/_src/logo_png.png" alt="">
+						</div>
+						<div class="menu-list">
+							<ul>
+								<li class="menu-list-item"><a href="http://">Главная</a></li>
+								<li class="menu-list-item"><a href="http://">Портфолио</a></li>
+								<li class="menu-list-item"><a href="http://">Отзывы</a></li>
+								<li class="menu-list-item"><a href="http://">Контакты</a></li>
+								<li class="menu-list-item"><a href="http://">Услуги</a></li>
+								<li class="menu-list-item"><a href="http://">Обо мне</a></li>
+							</ul>
+						</div>
+						<div class="social"></div>
+						<div class="copy">Все права защищены. <br> Копирайт © 2019</div>
+
+					</div>
+					<div class="banner">
+						<script>
+							$(function() {$('.carousel').carousel()});
+						</script>
+						<!--Carousel Wrapper-->
+						<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+							<!--Indicators-->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-2" data-slide-to="1"></li>
+								<li data-target="#carousel-example-2" data-slide-to="2"></li>
+							</ol>
+							<!--/.Indicators-->
+							<!--Slides-->
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="view">
+										<img class="d-block w-100" src="/img/_src/main.jpeg" alt="First slide">
+										<div class="mask rgba-black-light"></div>
+									</div>
+									<div class="carousel-caption">
+										<h3 class="h3-responsive">Light mask</h3>
+										<p>First text</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<!--Mask color-->
+									<div class="view">
+										<img class="d-block w-100" src="https://placehold.it/1920x984/green/"
+											alt="Second slide">
+										<div class="mask rgba-black-strong"></div>
+									</div>
+									<div class="carousel-caption">
+										<h3 class="h3-responsive">Strong mask</h3>
+										<p>Secondary text</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<!--Mask color-->
+									<div class="view">
+										<img class="d-block w-100" src="https://placehold.it/1920x984/red/"
+											alt="Third slide">
+										<div class="mask rgba-black-slight"></div>
+									</div>
+									<div class="carousel-caption">
+										<h3 class="h3-responsive">Slight mask</h3>
+										<p>Third text</p>
+									</div>
+								</div>
+							</div>
+							<!--/.Slides-->
+							<!--Controls-->
+							<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							<!--/.Controls-->
+						</div>
+						<!--/.Carousel Wrapper-->
+					</div>
+				</div>
+
+
+			</div>
 
 		</div>
 
-	</div>
 
-	</div>
+		<script src="js/scripts.min.js" defer></script>
 
-	<script src="js/scripts.min.js"></script>
+	</body>
 
-</body>
-
-</html>
+</div>

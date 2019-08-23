@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	height: 100%
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -39,5 +40,38 @@ b, strong
 	font-weight: bold
 
 
-
-@import "media" // Always at the end
+/* .main
+	display: flex	 */	
+.menu
+	width: 306px
+	height: 984px
+	background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.8))
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	z-index: 1111
+	position: absolute
+	.logo
+		margin-top: 45px
+		img
+			width: 240px
+			height: 100px
+			display: block
+			margin: auto
+	.menu-list
+		font-weight: 600
+		font-size: 14px
+		text-align: left
+		ul
+			list-style: none
+			margin: 0 35px
+			padding: 0
+			.menu-list-item
+				padding: 15px 0
+				a
+					color: #303030
+					display: block
+					height: 100%
+					width: 100%
+.banner
+	height: 984px
